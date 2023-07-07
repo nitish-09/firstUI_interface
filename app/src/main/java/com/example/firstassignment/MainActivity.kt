@@ -54,6 +54,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.firstassignment.quizScreen.QuizTab
 import com.example.firstassignment.quizScreen.Screen2
 import com.example.firstassignment.tab.TabLayout
 import com.example.firstassignment.ui.theme.FirstAssignmentTheme
@@ -71,10 +72,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TopBar()
+                    //TopBar()
+                    QuizTab()
                 }
-              //  Screen1()
-               // TabLayout()
+
             }
         }
     }
