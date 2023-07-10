@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Button
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Share
@@ -61,9 +62,13 @@ import com.example.firstassignment.ui.theme.FirstAssignmentTheme
 import com.google.accompanist.pager.ExperimentalPagerApi
 
 class MainActivity : ComponentActivity() {
+
+
+    var savedInstanceState=null
     @OptIn(ExperimentalPagerApi::class)
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
+        savedInstanceState
         setContent {
             FirstAssignmentTheme {
                 // A surface container using the 'background' color from the theme
@@ -72,8 +77,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //TopBar()
-                    QuizTab()
+                    TopBar()
+                    //QuizTab()
                 }
 
             }
@@ -150,34 +155,15 @@ fun First(){
 
     }
 
-    Column(modifier=Modifier.padding(24.dp,130.dp,11.dp,10.dp)) {
+    Column(modifier=Modifier.padding(0.dp,130.dp,11.dp,24.dp)) {
 
         TabLayout()
 
     }
 
-   // SecondItem()
+
 }
 
-
-
-
-//@Preview(showBackground = true)
-@Composable
-fun FirstItem(){
-
-
-
-    //SecondItem()
-}
-
-/*
-@Composable
-fun Clickable() {
-    ClickableText(text = AnnotatedString("How to earn >"), modifier = Modifier.padding(12.dp,0.dp,148.dp,0.dp),
-        onClick ={ clicked ->
-            Log.d("TAG","Clicked: $clicked")} )
-}*/
 
 
 
@@ -401,14 +387,20 @@ fun OnClick(){
             Surface(
                 color=Color(0xffFAFAFD)) {
 
-                Text(
-                    text = "Earn Coins to Play",
-                    modifier = Modifier.padding(37.dp, 8.dp, 37.dp, 8.dp),
-                    color = Color(0xff004FC4),
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight(600),
-                    lineHeight = 24.sp
-                )
+
+                Button(onClick = { /*TODO*/ }) {
+
+
+                    Text(
+                        text = "Earn Coins to Play",
+                        modifier = Modifier.padding(37.dp, 8.dp, 37.dp, 8.dp),
+                        color = Color(0xff004FC4),
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight(600),
+                        lineHeight = 24.sp
+                    )
+                }
+
             }
         }
     }
@@ -418,11 +410,11 @@ fun OnClick(){
 
 
 
-@Preview(showBackground = true)
+/*@Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     FirstAssignmentTheme {
         TopBar()
 
     }
-}
+}*/

@@ -90,7 +90,7 @@ fun Button1(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),
@@ -201,10 +201,9 @@ fun Below1(){
 @Preview(showBackground = true)
 @Composable
 fun Question2(){
-    Column() {
+    Column(modifier=Modifier.padding(24.dp)) {
 
-        Card(modifier = Modifier.padding(24.dp,15.dp,24.dp,112.dp),
-            shape= RectangleShape
+        Card(shape= RectangleShape
         ){
             Surface{
                 Column() {
@@ -244,7 +243,7 @@ fun Button2(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),
@@ -355,9 +354,9 @@ fun Below2(){
 @Preview(showBackground = true)
 @Composable
 fun Question3(){
-    Column() {
+    Column(modifier=Modifier.padding(24.dp)) {
 
-        Card(modifier = Modifier.padding(24.dp,15.dp,24.dp,112.dp),
+        Card(
             shape= RectangleShape
         ){
             Surface{
@@ -398,7 +397,7 @@ fun Button3(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),
@@ -507,9 +506,9 @@ fun Below3(){
 @Preview(showBackground = true)
 @Composable
 fun Question4(){
-    Column() {
+    Column(modifier = Modifier.padding(24.dp)) {
 
-        Card(modifier = Modifier.padding(24.dp,15.dp,24.dp,80.dp),
+        Card(
             shape= RectangleShape
         ){
             Surface{
@@ -550,7 +549,7 @@ fun Button4(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),
@@ -659,7 +658,7 @@ fun Below4(){
 @Preview(showBackground = true)
 @Composable
 fun Question5(){
-    Column() {
+    Column(modifier = Modifier.padding(24.dp)) {
 
         Card(shape= RectangleShape){
             Surface{
@@ -700,7 +699,7 @@ fun Button5(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),
@@ -808,7 +807,7 @@ fun Below5(){
 @Preview(showBackground = true)
 @Composable
 fun Question6(){
-    Column() {
+    Column(modifier = Modifier.padding(24.dp)) {
 
         Card(shape= RectangleShape){
             Surface{
@@ -849,7 +848,7 @@ fun Button6(){
     Card(){
 
         Surface() {
-            Column(modifier = Modifier.padding(24.dp)) {
+            Column() {
                 OutlinedButton(
                     onClick = { /*TODO*/ },
                     border = BorderStroke(1.dp, Color.Transparent),

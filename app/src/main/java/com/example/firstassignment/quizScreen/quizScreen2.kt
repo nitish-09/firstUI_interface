@@ -26,11 +26,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.firstassignment.MainActivity
 import com.example.firstassignment.R
 
-@Preview(showBackground = true)
 @Composable
-fun Screen2(){
+fun Screen2(activity: MainActivity){
 
     Box(){
     Column(modifier = Modifier.padding(24.dp)) {
